@@ -1,0 +1,10 @@
+@model System.Collections.Generic.IList<string>
+
+<h3>Index View</h3>
+<ul>
+    @foreach(var item in Model){
+        <li>@item</li>
+    }
+</ul>
+<div>Email : <b>@ViewData["email"]</b></div>
+<div>Contact : <b>@ViewBag.contact</b></div>
